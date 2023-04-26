@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    .circle {
+        animation: Pulsation 1.333s ease-in infinite;
+    }
+}
+
+@media (max-width: 767px) {
+    .circle {
+        animation: PulsationMin 1.333s ease-in infinite;
+    }
+}
+
+@keyframes Pulsation {
+    0% {
+        border: 12px solid #FFEBC6;
+    }
+    50% {
+        border: 6px solid #FFEBC6;
+    }
+    100% {
+        border: 12px solid #FFEBC6;
+    }
+}
+
+@keyframes PulsationMin {
+    0% {
+        border: 7px solid #FFEBC6;
+    }
+    50% {
+        border: 3px solid #FFEBC6;
+    }
+    100% {
+        border: 7px solid #FFEBC6;
+    }
+}

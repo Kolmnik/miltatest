@@ -1,0 +1,260 @@
+.button {
+    padding: 16px 32px;
+    background-color: #fff;
+    color: #1E63CA;
+
+    cursor: pointer;
+    border-radius: 30px;
+
+    max-width: fit-content;
+}
+
+.article h1 {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.searchBlock .img_pos.dealer {
+    max-width: 50%;
+    border-radius: 30px;
+}
+.benefitsSection {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.benefits__crads{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.benefits__crads .card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card .blue {
+    color: #1E63CA;
+    font-weight: bold;
+}
+
+.manyText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dealerForm {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+
+    background-color: #fff;
+
+    border-radius: 30px;
+}
+
+.dealerForm .img_pos {
+    max-width: 47%;
+}
+.dealerForm .img_pos img {
+    width: 100%;
+}
+
+/* --------------------------------  FORM -------------------------------------*/
+
+
+.text-field_floating {
+    position: relative;
+}
+.text-field_floating .text-field__input {
+    /*line-height: 1.25;*/
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: 1px solid #1E63CA;
+    text-decoration: none;
+    min-height: 56px;
+}
+.text-field_floating .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 24px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    margin-top: 15px;
+
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    color: #BABABA;
+}
+.text-field_floating .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+.text-field_floating .text-field__input::placeholder {
+    color: transparent;
+}
+.text-field_floating .text-field__input:focus,
+.text-field_floating .text-field__input:not(:placeholder-shown) {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.text-field_floating .text-field__input:focus~.text-field__label,
+.text-field_floating .text-field__input:not(:placeholder-shown)~.text-field__label {
+    opacity: .65;
+    transform: scale(.85) translateY(-10px) translateX(5px);
+}
+
+
+.input {
+    display: flex;
+}
+
+.input input {
+    margin-top: 15px;
+}
+
+.input .text-field__input {
+    font-family: 'Rubik';
+    font-style: normal;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0B121C;
+}
+
+.bigInput {
+    border-radius: 20px;
+    border: 1px solid #1E63CA;
+    padding: 10px 25px;
+
+    height: 95px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 15px;
+}
+
+.bigInput::-webkit-scrollbar {
+    display: none;
+}
+
+.bigInput::placeholder {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #BABABA;
+}
+
+.doubleInput {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.doubleInput .input {
+    width: 100%;
+}
+
+.dealerForm__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkboxInput {
+    margin-top: 20px;
+}
+
+.sendButton {
+    margin-top: 20px;
+    background-color: #1E63CA;
+    padding: 16px 32px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+@media (max-width: 1140px) {
+    .img_pos.dealer img {
+        height: 337px;
+        max-height: 337px;
+        max-width: fit-content;
+    }
+    .benefits__crads {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .dealerForm  {
+        align-items: center;
+    }
+    .doubleInput {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .aboutDealer .boxes {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 888px) and (min-width: 768px) {
+    .article {
+        height: 475px;
+    }
+}
+
+@media (max-width: 769px) {
+    .searchBlock .img_pos.dealer {
+        max-width: 100%;
+    }
+    .aboutDealer .boxes {
+        max-width: 100%;
+    }
+    .img_pos.dealer {
+        right: 0;
+    }
+    .searchBlock .article h1, .searchBlock .article p {
+        max-width: 100%;
+    }
+    .article h1 {
+        font-size: 30px;
+    }
+    .benefits__crads {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    .dealerForm  {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .dealerForm .img_pos {
+        max-width: 100% ;
+    }
+}

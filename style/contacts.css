@@ -1,0 +1,93 @@
+
+
+.twoSec {
+    display: grid;
+    grid-template-columns: 33% auto;
+    gap: 20px;
+}
+
+.twoSec__map img {
+    width: 100%;
+    height: 100%;
+}
+
+.twoSec__info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.ourStore, .ourDoc {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 30px;
+
+    border: 1px solid #1E63CA;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.contactsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ourStore__row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+.phoneSvg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.attention {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.attention .att__article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.address_info {
+    margin-top: 15px;
+}
+@media (max-width: 1520px) and (min-width: 1140px) {
+    .twoSec {
+        grid-template-columns: 45% auto;
+    }
+}
+
+@media (max-width: 1139px) {
+    .twoSec {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .text-field__counter {
+        margin-left: 80%;
+    }
+}

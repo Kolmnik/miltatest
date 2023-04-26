@@ -1,0 +1,314 @@
+/* ------------------------------------        About US              --------------------------------------*/
+
+.aboutSection {
+    padding: 60px;
+    display: flex;
+    gap: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.article__about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.showMore__about {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ------------------------------------        searchBlock           --------------------------------------*/
+
+.searchBlock.about {
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.about .img_pos {
+    left: 0;
+}
+
+.showFeedback {
+    position: relative;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.showFeedback .avatar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar img {
+    max-width: 71px;
+    height: auto;
+}
+
+.info__avatar p{
+    margin-top: 0;
+}
+
+
+.DocumentsSection {
+    margin-top: 100px;
+}
+
+.DocumentsSection h2 {
+    text-align: center;
+}
+
+.showCards__documents {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.card__documents {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    min-height: 300px;
+    max-width: 315px;
+    min-width: 315px;
+}
+
+.about .img_pos.feedback {
+    right: 0;
+    left: auto;
+    max-width: 50%;
+}
+
+.about .article .boxes {
+    max-width: 47%;
+}
+.about .article {
+    height: 574px;
+}
+.img__documents {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+}
+
+.text__documents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.goToAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1E63CA;
+    border-radius: 30px;
+}
+
+.goToAll p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.aboutDealer {
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.searchBlock .img_pos.dealer img {
+    height: 589px;
+}
+
+.aboutDealer .boxes {
+    max-width: 32%;
+}
+
+.aboutDealer .button {
+    padding: 16px 32px;
+    background-color: #fff;
+    border-radius: 30px;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.searchBlock .img_pos.dealer {
+    bottom: auto;
+}
+
+
+.articleSection {
+    margin-top: 100px;
+}
+
+.articleSection h2 {
+    text-align: center;
+}
+
+.articleSection .rightSide {
+    margin-top: 30px;
+    display: flex;
+}
+
+.articleSection .articleItemBox:nth-child(2) {
+    margin-top: 0;
+}
+.articleItemBox {
+    width: 50%;
+}
+
+.articleItemBox .articleItem{
+    width: 50%;
+}
+
+.articleItemBox .articleItem .buttonArticle {
+    margin-top: 10px;
+    padding: 5px 5px 5px 0;
+}
+
+.articleItemBox .articleItem  .info p {
+    min-height: 71px;
+}
+
+
+@media (max-width: 1520px) and (min-width: 1140px) {
+    .searchBlock .img_pos.feedback img {
+        height: 616px;
+        width: auto;
+    }
+    .articleSection .rightSide {
+        gap: 20px;
+    }
+    .about .article {
+        max-height: 556px;
+    }
+}
+
+@media (max-width: 1139px) and (min-width: 768px) {
+    .about .article .boxes {
+        max-width: 64%;
+    }
+    .about .img_pos.feedback {
+        max-width: 32%;
+    }
+    .video__about {
+        max-width: 50%;
+        min-width: 40%;
+    }
+    .video__about img{
+        max-width: 100%;
+        min-width: 245px;
+    }
+    .searchBlock .img_pos.feedback img {
+        height: 527px;
+        width: auto;
+    }
+    .about .article {
+        margin-top: 0px;
+        height: 568px;
+    }
+    .card__documents {
+        min-width: 285px;
+    }
+
+    .aboutDealer .boxes {
+        max-width: 50%;
+    }
+    .searchBlock .img_pos.dealer {
+        height: 337px;
+        bottom: 0;
+        align-items: flex-end;
+    }
+    .searchBlock .img_pos.dealer img {
+        height: 337px;
+
+    }
+    .aboutDealer .article {
+        margin-top: 0px;
+        min-height: 440px;
+    }
+    .articleSection .rightSide {
+        flex-direction: column;
+    }
+    .articleItemBox {
+        width: 100%;
+    }
+    .articleSection .articleItemBox:nth-child(2) {
+        margin-top: 20px;
+    }
+    .aboutSection {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 360px) {
+    .about .article .boxes {
+        max-width: 100%;
+    }
+    .about .img_pos.feedback {
+        max-width: 100%;
+    }
+    .about .img_pos.feedback img{
+        max-width: 390px;
+        height: auto;
+    }
+    .about .article {
+        height: fit-content;
+    }
+    .aboutSection {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .video__about {
+        max-width: 100%;
+    }
+    .video__about img{
+        max-width: 100%;
+    }
+    .showCards__documents {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .DocumentsSection,.searchBlock.about, .mt100, .articleSection {
+        margin-top: 80px;
+    }
+
+    .aboutDealer .boxes {
+        max-width: 100%;
+    }
+    .searchBlock .img_pos.dealer img {
+        height: auto;
+    }
+    .articleSection .rightSide {
+        flex-direction: column;
+    }
+    .articleItemBox {
+        width: 100%;
+    }
+    .articleSection .articleItemBox:nth-child(2) {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,330 @@
+.accountSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.account .info {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #EBF3FF;
+    border-radius: 30px;
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.account .info .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.account .info .main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.account .info .header h2 {
+    font-size: 22px;
+}
+
+.account .links  {
+    display: grid;
+    gap: 20px;
+}
+
+.account .links .button {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+
+    box-shadow: 0px 0px 5px #EBF3FF;
+
+}
+
+
+
+/* -------------------- Data --------------------------------*/
+.dataSwitch {
+    display: flex;
+    gap: 10px;
+
+}
+
+.dataSwitch p {
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
+    padding: 10px 24px;
+
+    cursor: pointer;
+    color: #929292;
+
+}
+
+.dataSwitch p.picked {
+    border: 1px solid #1E63CA;
+    color: #1E63CA;
+}
+.dataEdit {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.dataEdit h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.dataEdit input {
+    max-width: 30%;
+    min-width: 400px;
+}
+
+form {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file label {
+    color: #1E63CA;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 15px 0px;
+    width: fit-content;
+}
+
+.seeAnother {
+    width: fit-content;
+    cursor: pointer;
+    padding: 5px 0;
+    margin-top: 30px;
+}
+
+.sendButton.accountSend {
+    width: fit-content;
+    color: #929292;
+    background-color: inherit;
+    border: 1px solid #929292;
+}
+
+
+
+
+/* ------------------- payers ---------------------------------------*/
+
+
+.addButton{
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid #1E63CA;
+    width: fit-content;
+    padding: 12px 32px;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.payersSection .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.payersSection .cards .card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px 20px;
+}
+
+.payersSection .cards .card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payersSection .cards .card p {
+    margin-top: 5px;
+}
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tags p {
+    margin-top: 0 !important;
+}
+
+.tags .blue, .tags .green {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.tags .blue {
+    background-color: #ECF3FF;
+}
+.tags .green {
+    background-color: #EBFFD9;
+}
+
+/* --------------------------- orders -------------------------------*/
+
+.ordersSection {
+    margin-top: 30px;
+}
+
+.ordersSection .cardsSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+}
+.ordersSection .cardsSection .bigcard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.ordersSection .cardsSection .bigcard .card {
+    padding: 0;
+    gap: 5px;
+}
+
+.ordersSection .cardsSection .bigcard .card p {
+    margin-top: 0;
+}
+
+.ordersSection .cardsSection .bigcard .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ordersSection .cardsSection .bigcard .header h2 {
+    font-size: 22px;
+}
+
+.ordersSection .cardsSection .bigcard .header .faq {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.ordersSection .cardsSection .bigcard .info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.ordersSection .cardsSection .bigcard .info .main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+}
+
+.ordersSection .cardsSection .bigcard .info .product {
+    display: grid;
+    grid-template-columns: repeat(9,auto);
+    gap: 10px;
+    align-items: center;
+}
+
+.ordersSection .cardsSection .bigcard .info .product img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #EBF3FF;
+
+}
+
+
+@media (max-width: 1520px) and (min-width: 1140px) {
+    .payersSection .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1520px) and (min-width: 1025px) {
+    .dataEdit input {
+        max-width: 38%;
+        min-width: 400px;
+    }
+
+}
+@media (max-width: 1139px) and (min-width: 768px) {
+    .payersSection .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .account, .account .info .main {
+        grid-template-columns: auto;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .account, .account .info .main {
+        grid-template-columns: auto;
+    }
+    .account .info {
+        padding: 30px 20px;
+    }
+    .account .links .button {
+        padding: 30px 20px;
+    }
+    .account .links {
+        gap: 10px;
+    }
+    .dataEdit input {
+        min-width: 100%;
+    }
+    .dataSwitch {
+        flex-direction: column;
+    }
+    .sendButton.accountSend {
+        width: 100%;
+    }
+    .payersSection .cards {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 340px) {
+    .tags {
+        flex-direction: column;
+    }
+    .tags .blue, .tags .green {
+        display: flex;
+        justify-content: center;
+    }
+}
