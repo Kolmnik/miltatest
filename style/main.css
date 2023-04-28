@@ -1287,7 +1287,7 @@ footer  {
         max-width: 100%;
     }
     .switchBlock .article {
-        padding: 20px 30px;
+        padding:  30px 20px;
         height: fit-content;
     }
     .productItem {
@@ -1298,7 +1298,7 @@ footer  {
     }
     .consultation .leftSide {
         gap: 30px;
-        padding: 20px 30px;
+        padding:  30px 20px;
         align-items: center;
     }
     .consultation .leftSide p, .consultation .leftSide h2 {
@@ -1308,11 +1308,11 @@ footer  {
         justify-content: center;
     }
     .mapBlock .leftSide {
-        padding: 20px 30px;
+        padding:  30px 20px;
     }
     .leftSide {
         flex-direction: column;
-        padding: 20px;
+        padding:  30px 20px;
         height: fit-content;
     }
     .img_block {
@@ -1338,7 +1338,7 @@ footer  {
     }
     .article {
         margin-top: 0px;
-        padding: 20px 30px;
+        padding:  30px 20px;
     }
     .searchBlock {
         display: flex;
