@@ -993,6 +993,9 @@ footer  {
     .show__block {
         max-width: 41.5%;
     }
+    .laser .show__block {
+        max-width: 45%;
+    }
     .article.laser {
         max-height: 471px;
     }
