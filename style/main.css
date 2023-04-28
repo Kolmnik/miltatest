@@ -88,7 +88,9 @@ body {
 }
 
 /* ----------------------   /check-box ----------------------*/
-
+.showMe.productShowMe .newsBlock {
+    margin-top: 20px;
+}
 /* ------------------------------- HEADER ---------------------------------*/
 header {
     background: #FFFFFF;
@@ -100,6 +102,7 @@ header {
     z-index: 99999;
     display: flex;
     justify-content: center;
+    height: 87px;
 }
 
 .inner {
@@ -214,7 +217,7 @@ header .inner {
     justify-content: flex-start;
     align-items: center;
     padding-left: 60px;
-    height: 521px;
+    height: 530px;
     margin-top: 60px;
 }
 
@@ -475,7 +478,7 @@ header .inner {
     flex-direction: column;
     background-color: #fff;
     border-radius: 30px;
-    padding: 30px 60px;
+    padding: 40px 60px;
 }
 .main_item h2 {
     margin-top: 20px;
@@ -701,6 +704,7 @@ header .inner {
     display: flex;
     padding: 60px;
     gap: 20px;
+    align-items: center;
 }
 
 .consultation .leftSide {
@@ -810,6 +814,7 @@ header .inner {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .article p.article_i {
@@ -880,6 +885,7 @@ header .inner {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: flex-start;
 }
 
 .main_infoMap p {
@@ -979,14 +985,14 @@ footer  {
         padding-right: 86px;
     }
     .article {
-        max-height: 491px;
+        max-height: 450px;
     }
     .searchBlock .img_pos img{
         height: 512px;
     }
 
     .switchBlock .img_pos {
-        height: 551px;
+        height: 510px;
     }
     .switchBlock {
         margin-top: 100px;
@@ -1014,13 +1020,24 @@ footer  {
         max-width: 55% !important;
     }
     .searchBlock .img_pos.laser img {
-        height: 551px;
+        height: 517px;
     }
     .main_item {
         justify-content: space-between;
+        align-items: center;
+    }
+    .main_item img {
+        height: 264px;
+        width: fit-content;
     }
 }
 @media (max-width: 1139px) and (min-width: 768px) {
+    .newsBlock {
+        margin-top: 20px;
+    }
+    .opening p {
+        font-size: 13px;
+    }
     .searchBlock .img_pos img {
         max-height: 366px;
     }
@@ -1058,14 +1075,14 @@ footer  {
         margin-bottom: 0;
     }
     .leftSide {
-        padding: 30px;
+        padding: 40px;
         height: fit-content;
     }
     .menu {
         display: none;
     }
     .boxes {
-        max-width: 50%;
+        max-width: 48%;
     }
     .switchBlock .article {
         padding-right: 5%;
@@ -1108,7 +1125,7 @@ footer  {
     }
     .opening:nth-child(5) {
         top: 44%;
-        left: 60%;
+        left: 50%;
         padding: 10px 15px 10px 10px;
     }
     .searchBlock {
@@ -1125,6 +1142,7 @@ footer  {
     }
 
     .categories__grid {
+        margin-top: 20px;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -1147,7 +1165,7 @@ footer  {
     .categories__item {
         flex-direction: row;
         gap: 10px;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
     .categories__item img {
@@ -1155,7 +1173,7 @@ footer  {
     }
     .switchBlock .img_pos img {
         width: auto;
-        height: 403px;
+        height: 375px;
     }
     .switchBlock .img_pos.oldMan img {
         height: 441px;
@@ -1224,6 +1242,9 @@ footer  {
 }
 
 @media (max-width: 767px) and (min-width: 100px) {
+    .opening p {
+        font-size: 13px;
+    }
     .switchBlock .img_pos.oldMan img {
         height: 466px;
         width: auto;
@@ -1238,6 +1259,7 @@ footer  {
         max-width: 100%;
     }
     .newsBlock {
+        margin-top: 20px;
         gap: 10px;
     }
     .innerSection {
@@ -1267,6 +1289,17 @@ footer  {
     }
     .consultation .leftSide {
         gap: 30px;
+        padding: 30px;
+        align-items: center;
+    }
+    .consultation .leftSide p, .consultation .leftSide h2 {
+        text-align: center;
+    }
+    .phone {
+        justify-content: center;
+    }
+    .mapBlock .leftSide {
+        padding: 30px;
     }
     .leftSide {
         flex-direction: column;
@@ -1316,6 +1349,7 @@ footer  {
         width: 100%;
         min-width: 390px;
         height: auto !important;
+        padding: 0 20px;
     }
     .circle {
         width: 20px;
@@ -1393,6 +1427,8 @@ footer  {
         padding: 0;
     }
     .switchBlock .img_pos img{
+        margin-top: 10px;
+        padding: 0 20px;
         max-width: 390px;
     }
     .switchBlock .button {
@@ -1421,8 +1457,7 @@ footer  {
         grid-template-rows: auto;
     }
     .more_info {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
     .info_item {
         flex-direction: row;
@@ -1472,6 +1507,7 @@ footer  {
         display: none;
     }
     .categories__grid {
+        margin-top: 20px;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
