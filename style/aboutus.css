@@ -287,6 +287,9 @@
     .aboutDealer, .DocumentsSection, .searchBlock.about {
         margin-top: 80px;
     }
+    .newsBlock, .showCards__documents {
+        gap: 10px;
+    }
 }
 @media (max-width: 767px) and (min-width: 100px) {
     .searchBlock .img_pos.dealer {
