@@ -44,7 +44,7 @@
     border-radius: 30px;
     padding: 30px;
     margin-top: 30px;
-    height: 271px;
+    height: fit-content;
 }
 
 .showFeedback .avatar {
@@ -195,12 +195,17 @@
     display: none;
 }
 
+.searchBlock .img_pos.dealer {
+    max-width: 64%;
+    bottom: -4px;
+}
+
 @media (min-width: 1920px) {
     .only1920 {
         display: block;
     }
 }
-@media (max-width: 1520px) and (min-width: 1140px) {
+@media (max-width: 1520px) and (min-width: 1139px) {
     .searchBlock .img_pos.feedback img {
         height: 616px;
         width: auto;
@@ -211,15 +216,9 @@
     .about .article {
         max-height: 556px;
     }
-    .showFeedback {
-        height: 295px;
-    }
 }
 
-@media (max-width: 1139px) and (min-width: 768px) {
-    .showFeedback {
-        height: 422px;
-    }
+@media (max-width: 1139px) and (min-width: 767px) {
     .about .article .boxes {
         max-width: 64%;
     }
@@ -247,7 +246,7 @@
     }
 
     .aboutDealer .boxes {
-        max-width: 50%;
+        max-width: 45%;
     }
     .searchBlock .img_pos.dealer {
         height: 337px;
@@ -272,13 +271,26 @@
         margin-top: 20px;
     }
     .aboutSection {
-        padding: 40px;
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 1520px) and (min-width: 1139px) {
+    .searchBlock .img_pos.dealer img {
+        height: 511px;
+    }
+    .aboutDealer .boxes {
+        max-width: 38%;
     }
 }
 
-@media (max-width: 767px) and (min-width: 360px) {
-    .showFeedback {
-        height: 547px;
+@media (max-width: 1139px) {
+    .aboutDealer, .DocumentsSection, .searchBlock.about {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 767px) and (min-width: 100px) {
+    .searchBlock .img_pos.dealer {
+        max-width: 100%;
     }
     .about .article .boxes {
         max-width: 100%;
@@ -289,6 +301,7 @@
     .about .img_pos.feedback img{
         max-width: 390px;
         height: auto;
+        padding: 10px 70px 0;
     }
     .about .article {
         height: fit-content;
@@ -328,4 +341,8 @@
     .articleSection .articleItemBox:nth-child(2) {
         margin-top: 20px;
     }
+    .searchBlock .img_pos.dealer img {
+        padding: 10px 30px 0;
+    }
+
 }

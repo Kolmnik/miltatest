@@ -988,6 +988,7 @@ footer  {
     }
     .article {
         max-height: 450px;
+        padding: 60px;
     }
     .show__block {
         max-width: 41.5%;
