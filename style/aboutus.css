@@ -44,6 +44,7 @@
     border-radius: 30px;
     padding: 30px;
     margin-top: 30px;
+    height: 271px;
 }
 
 .showFeedback .avatar {
@@ -190,8 +191,15 @@
 .articleItemBox .articleItem  .info p {
     min-height: 71px;
 }
+.only1920 {
+    display: none;
+}
 
-
+@media (min-width: 1920px) {
+    .only1920 {
+        display: block;
+    }
+}
 @media (max-width: 1520px) and (min-width: 1140px) {
     .searchBlock .img_pos.feedback img {
         height: 616px;
@@ -203,9 +211,15 @@
     .about .article {
         max-height: 556px;
     }
+    .showFeedback {
+        height: 295px;
+    }
 }
 
 @media (max-width: 1139px) and (min-width: 768px) {
+    .showFeedback {
+        height: 422px;
+    }
     .about .article .boxes {
         max-width: 64%;
     }
@@ -263,6 +277,9 @@
 }
 
 @media (max-width: 767px) and (min-width: 360px) {
+    .showFeedback {
+        height: 547px;
+    }
     .about .article .boxes {
         max-width: 100%;
     }
