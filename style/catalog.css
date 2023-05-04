@@ -141,6 +141,7 @@ input::placeholder {
     align-items: center;
 
     cursor: pointer;
+    padding: 5px 5px 5px 0;
 }
 
 
@@ -183,7 +184,7 @@ input::placeholder {
 .showMore__catalog {
     border: 1px solid #1E63CA;
     padding: 12px 32px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     width: auto;
     cursor: pointer;
@@ -229,16 +230,26 @@ input::placeholder {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
-@media (max-width: 1520px) and (min-width: 1140px) {
+.buttonSort {
+    display: none;
+}
+.buttonFilter {
+    display: flex;
+    gap: 5px;
+}
+@media (max-width: 1520px) and (min-width: 1139px) {
     .catalogSection {
-        grid-template-columns: 23% 75%;
+        grid-template-columns: 23% 74%;
+    }
+    .catalogHeader .header h1 {
+        font-size: 40px;
     }
 }
-@media (max-width: 1139px) and (min-width: 1024px) {
+@media (max-width: 1139px) and (min-width: 1023px) {
     .products {
         grid-template-columns: repeat(4, auto);
     }}
-@media (max-width: 1139px) and (min-width: 768px) {
+@media (max-width: 1139px) and (min-width: 767px) {
 
     .filter {
         display: flex;
@@ -267,7 +278,7 @@ input::placeholder {
         position: relative;
         overflow-y: inherit;
         max-height: min-content;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .viewer_cat {
         height: min-content;
@@ -277,12 +288,12 @@ input::placeholder {
         font-size: 35px;
     }
 }
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 767px) {
     .products {
         grid-template-columns: repeat(3, auto);
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .filter {
         display: flex;
         align-items: center;
@@ -311,7 +322,7 @@ input::placeholder {
         position: relative;
         overflow-y: inherit;
         max-height: min-content;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .viewer_cat {
         height: min-content;

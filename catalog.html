@@ -100,8 +100,8 @@
             <div class="header">
                 <h1>Каталог</h1>
                 <div class="count">
-                    <p class="count__num">109</p>
-                    <p class="count__name">товаров</p>
+                    <p class="gray__text low count__num">109</p>
+                    <p class="gray__text low count__name">товаров</p>
                 </div>
             </div>
             <div class="sort">
@@ -116,8 +116,20 @@
         <div class="catalogSection">
             <div class="catalogSection__leftSection">
                 <div class="filter">
-                    <p>Фильтры</p>
-                    <p class="filter__counter">0</p>
+                    <div class="buttonFilter curpoint">
+                        <p>Фильтры</p>
+                        <p class="filter__counter">0</p>
+                    </div>
+                    <div class="buttonSort">
+                        <div class="sort">
+                            <p>Сортировка:</p>
+                            <p class="sort__popular tapped">По популярности</p>
+                            <p class="sort__sales tapped">По скидке</p>
+                            <p class="sort__priceUp tapped">Цена ↑ </p>
+                            <p class="sort__priceDown tapped">Цена ↓ </p>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="viewer_cat">
                     <ul class="catalogSection__categories">
@@ -129,7 +141,7 @@
                         <li class="categories__tapped">Аксессуары</li>
                         <li class="categories__tapped">Литература</li>
                         <li class="categories__tapped">Аппараты  партнеров</li>
-                        <li class="categories__tapped red">🔥 Скидки и акции</li>
+                        <li class="categories__tapped red__text">🔥 Скидки и акции</li>
                     </ul>
                     <ul class="catalogSection__categories">
                         <li class="categories__header">Использование</li>
@@ -138,14 +150,14 @@
                                 <input type="checkbox" class="custom-checkbox" id="for_home" name="for_home" value="yes">
                                 <label for="for_home">
                                     <p class="name__label">Для дома</p>
-                                    <p class="count__input">(10)</p>
+                                    <p class="gray__text low count__input">(10)</p>
                                 </label>
                             </div>
                             <div class="input">
                                 <input type="checkbox" class="custom-checkbox" id="for_doc" name="for_doc" value="yes">
                                 <label for="for_doc">
                                     <p class="name__label">Для врачей</p>
-                                    <p class="count__input">(10)</p>
+                                    <p class="gray__text low count__input">(10)</p>
                                 </label>
                             </div>
 
@@ -158,16 +170,20 @@
                                 <input type="checkbox" class="custom-checkbox" id="1" name="for_home" value="yes">
                                 <label for="1">
                                     <p class="name__label">Физиотерапия</p>
-                                    <p class="count__input">(4)</p>
+                                    <p class="gray__text low count__input">(4)</p>
                                 </label>
                             </div>
                             <div class="input">
                                 <input type="checkbox" class="custom-checkbox" id="2" name="for_doc" value="yes">
                                 <label for="2">
                                     <p class="name__label">Фотодинамическая терапия</p>
-                                    <p class="count__input">(5)</p>
+                                    <p class="gray__text low count__input">(5)</p>
                                 </label>
                             </div>
+
+                        </li>
+                        <li>
+                            <p class="blue__text curpoint">Еще</p>
                         </li>
                     </ul>
                     <ul class="catalogSection__categories">

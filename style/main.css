@@ -44,7 +44,10 @@ body {
     z-index: 99999;
 }
 
-
+.curpoint {
+    cursor: pointer;
+    width: fit-content;
+}
 /* ----------------------   check-box ----------------------*/
 
 .custom-checkbox {
@@ -322,11 +325,18 @@ header .inner {
 }
 
 /*------------------------------ newsBlock -------------------------------*/
+.view-window {
+    display: flex;
+    gap: 20px;
 
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
 .newsBlock {
     display: flex;
     margin-top: 30px;
-    gap: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -977,11 +987,14 @@ footer  {
 /* ----------------------------    laptop__size      ------------------------------------*/
 
 @media (max-width: 1520px) and (min-width: 1139px) {
+    .switchBlock .img_pos.oldMan {
+        height: 568px;
+    }
     .info_block {
         max-width: 100%;
     }
     .boxes {
-        max-width: 45%;
+        max-width: 49%;
     }
     .switchBlock .article {
         padding-right: 86px;
