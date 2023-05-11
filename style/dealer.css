@@ -14,7 +14,7 @@
     color: #FFFFFF;
 }
 .searchBlock .img_pos.dealer {
-    max-width: 50%;
+    max-width: 58%;
     border-radius: 30px;
 }
 .benefitsSection {
@@ -33,7 +33,7 @@
 
 .benefits__crads .card {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 30px;
 
     display: flex;
@@ -186,6 +186,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    max-width: 548px;
 }
 
 .checkboxInput {
@@ -201,8 +202,16 @@
     border: none;
 }
 
+.aboutDealer .boxes {
+    max-width: 43%;
+}
 
-@media (max-width: 1140px) {
+.aboutDealer .article {
+    padding: 0 60px;
+    height: 521px;
+}
+
+@media (max-width: 1139px) {
     .img_pos.dealer img {
         height: 337px;
         max-height: 337px;
@@ -219,18 +228,41 @@
         flex-wrap: wrap;
         gap: 0;
     }
+    .searchBlock .img_pos.dealer {
+        max-width: 45%;
+    }
+    .aboutDealer .boxes {
+        max-width: 55%;
+    }
+    .article h1 {
+        font-size: 35px;
+    }
+    .aboutDealer .article {
+        height: 429px;
+    }
+}
+
+
+@media (max-width: 888px) and (min-width: 767px) {
+    .article {
+        height: 475px;
+    }
     .aboutDealer .boxes {
         max-width: 60%;
     }
 }
 
-@media (max-width: 888px) and (min-width: 768px) {
-    .article {
-        height: 475px;
+@media (max-width: 767px) {
+    .benefits__crads {
+        gap: 10px;
     }
-}
-
-@media (max-width: 769px) {
+    .article h1 {
+        font-size: 30px;
+    }
+    .aboutDealer .article {
+        padding: 30px 40px;
+        height: 429px;
+    }
     .searchBlock .img_pos.dealer {
         max-width: 100%;
     }
@@ -256,5 +288,11 @@
     }
     .dealerForm .img_pos {
         max-width: 100% ;
+    }
+    .aboutDealer .article {
+        height: fit-content;
+    }
+    button.sendButton {
+        width: 100%;
     }
 }

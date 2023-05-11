@@ -2,6 +2,21 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 30px;
+}
+
+.account .info p {
+    margin-top: 0;
+}
+.headerAccount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quitAcc {
+    padding: 5px 0px 5px 5px ;
+    cursor: pointer;
 }
 
 .account {
@@ -124,13 +139,19 @@ form {
     cursor: pointer;
     padding: 5px 0;
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .sendButton.accountSend {
     width: fit-content;
     color: #929292;
     background-color: inherit;
-    border: 1px solid #929292;
+    /*border: 1px solid #929292;*/
+    padding: 14px 32px;
+    background-color: #d9d9d9;
+    margin-top: 10px;
 }
 
 
@@ -208,7 +229,7 @@ form {
 .ordersSection .cardsSection .bigcard {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 30px;
     background-color: #fff;
     border-radius: 30px;
@@ -249,19 +270,20 @@ form {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
+    max-width: 335px;
 }
 
 .ordersSection .cardsSection .bigcard .info .product {
-    display: grid;
-    grid-template-columns: repeat(9,auto);
+    display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .ordersSection .cardsSection .bigcard .info .product img {
     width: 80px;
     height: 80px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px #EBF3FF;
 
 }
@@ -274,7 +296,7 @@ form {
 }
 @media (max-width: 1520px) and (min-width: 1025px) {
     .dataEdit input {
-        max-width: 38%;
+        max-width: 400px;
         min-width: 400px;
     }
 
@@ -283,16 +305,39 @@ form {
     .payersSection .cards {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-@media (max-width: 1024px) and (min-width: 768px) {
-    .account, .account .info .main {
-        grid-template-columns: auto;
+    .accountSection {
+        margin-top: 0;
     }
-
-
+    .ordersSection .cardsSection .bigcard .info .product img:nth-child(n+4) {
+        display: none;
+    }
 }
+
 
 @media (max-width: 767px) {
+    .ordersSection .cardsSection .bigcard .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .ordersSection .cardsSection .bigcard .info {
+        grid-template-columns: 1fr;
+    }
+    .ordersSection .cardsSection .bigcard .info .main {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .ordersSection .cardsSection .bigcard .info .product {
+        justify-content: flex-start;
+    }
+    .ordersSection .cardsSection .bigcard .info .product img:nth-child(n+5) {
+        display: none;
+    }
+    .accountSection {
+        gap: 20px;
+        margin-top: 0;
+    }
     .account, .account .info .main {
         grid-template-columns: auto;
     }
@@ -308,17 +353,41 @@ form {
     .dataEdit input {
         min-width: 100%;
     }
-    .dataSwitch {
-        flex-direction: column;
-    }
+
     .sendButton.accountSend {
         width: 100%;
     }
     .payersSection .cards {
         grid-template-columns: auto;
     }
+    .headerAccount {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .quitAcc {
+        margin-top: 25px;
+    }
 }
+@media (max-width: 480px) {
+    .dataSwitch {
+        flex-direction: column;
 
+    }
+    .dataSwitch p {
+        text-align: center;
+    }
+    .text-field__label svg {
+        margin-top: 5px;
+    }
+    .input-file label {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: flex-start;
+    }
+    .ordersSection .cardsSection .bigcard .info .product img:nth-child(n+3) {
+        display: none;
+    }
+}
 @media (max-width: 340px) {
     .tags {
         flex-direction: column;

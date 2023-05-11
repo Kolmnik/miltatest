@@ -9,6 +9,10 @@ h1 {
     line-height: 110%;
 }
 
+h1.min {
+    font-size: 45px;
+}
+
 h2 {
     font-weight: 700;
     font-size: 45px;
@@ -134,6 +138,9 @@ footer li, footer a, footer p, footer {
     p, a, li {
         font-size: 16px;
     }
+    h1.min {
+        font-size: 40px;
+    }
 
 }
 @media (max-width: 1139px) and (min-width: 767px) {
@@ -161,6 +168,9 @@ footer li, footer a, footer p, footer {
     p.huge {
         font-size: 25px;
     }
+    h1.min {
+        font-size: 35px;
+    }
 }
 @media (max-width: 767px) {
     h1 {
@@ -184,5 +194,8 @@ footer li, footer a, footer p, footer {
     }
     h2.low {
         font-size: 22px;
+    }
+    h1.min {
+        font-size: 30px;
     }
 }

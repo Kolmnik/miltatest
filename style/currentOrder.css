@@ -60,7 +60,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
     .product__list-card {
         grid-template-columns: repeat(3, max-content);
         grid-template-rows: repeat(2, auto);
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
     .product__list-card {
         grid-template-columns: auto;
         gap: 10px;
