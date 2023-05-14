@@ -1,13 +1,18 @@
-
+.main_infoMap h3 {
+    font-size: 22px;
+}
 
 .twoSec {
     display: grid;
     grid-template-columns: 33% auto;
     gap: 20px;
 }
+.twoSec__map {
+    overflow: hidden;
+    border-radius: 30px;
+}
 
 .twoSec__map img {
-    width: 100%;
     height: 100%;
 }
 
@@ -71,11 +76,11 @@
     gap: 10px;
 }
 .address_info {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 @media (max-width: 1520px) and (min-width: 1140px) {
     .twoSec {
-        grid-template-columns: 45% auto;
+        grid-template-columns: 1fr 2fr;
     }
 }
 
@@ -83,11 +88,22 @@
     .twoSec {
         grid-template-columns: 1fr;
     }
+    .twoSec__info .button {
+        width: fit-content;
+        padding: 14px 32px;
+    }
+    .twoSec__map img {
+        width: 100%;
+    }
 }
 
 
 @media (max-width: 768px) {
     .text-field__counter {
         margin-left: 80%;
+    }
+    .twoSec__map img {
+        width: auto;
+        height: 100%;
     }
 }

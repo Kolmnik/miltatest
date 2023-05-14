@@ -181,7 +181,7 @@ form {
 .payersSection .cards .card {
     background-color: #fff;
     border-radius: 30px;
-    padding: 30px 20px;
+    padding: 30px;
 }
 
 .payersSection .cards .card h3 {
@@ -314,7 +314,7 @@ form {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .ordersSection .cardsSection .bigcard .header {
         flex-direction: column;
         align-items: flex-start;
@@ -338,17 +338,20 @@ form {
         gap: 20px;
         margin-top: 0;
     }
-    .account, .account .info .main {
-        grid-template-columns: auto;
+    .account {
+        grid-template-columns: auto ;
+    }
+    .account .info .main {
+        grid-template-columns: auto auto;
     }
     .account .info {
-        padding: 30px 20px;
+        padding: 30px;
     }
     .account .links .button {
         padding: 30px 20px;
     }
     .account .links {
-        gap: 10px;
+        gap: 20px;
     }
     .dataEdit input {
         min-width: 100%;
@@ -365,7 +368,7 @@ form {
         align-items: flex-start;
     }
     .quitAcc {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 }
 @media (max-width: 480px) {

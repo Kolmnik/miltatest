@@ -1267,6 +1267,9 @@ footer  {
 }
 
 @media (max-width: 767px) and (min-width: 100px) {
+    .breadcrumbs {
+        overflow: scroll;
+    }
     .opening p {
         font-size: 13px;
     }

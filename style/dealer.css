@@ -1,5 +1,5 @@
 .button {
-    padding: 16px 32px;
+    padding: 14px 32px;
     background-color: #fff;
     color: #1E63CA;
 
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px;
+    padding: 60px 80px;
 
     background-color: #fff;
 
@@ -210,8 +210,25 @@
     padding: 0 60px;
     height: 521px;
 }
+.aboutDealer .button {
+    margin-top: 30px;
+}
+@media (max-width: 1520px) {
+    .article h1 {
+        font-size: 45px;
+    }
+    .dealerForm {
+        padding: 60px;
+    }
+}
 
 @media (max-width: 1139px) {
+    .dealerForm {
+        padding: 40px 30px;
+    }
+    .aboutDealer .article {
+        padding-left: 30px;
+    }
     .img_pos.dealer img {
         height: 337px;
         max-height: 337px;
@@ -253,6 +270,9 @@
 }
 
 @media (max-width: 767px) {
+    .dealerForm {
+        padding: 30px 20px;
+    }
     .benefits__crads {
         gap: 10px;
     }
@@ -260,7 +280,7 @@
         font-size: 30px;
     }
     .aboutDealer .article {
-        padding: 30px 40px;
+        padding: 30px 20px;
         height: 429px;
     }
     .searchBlock .img_pos.dealer {
@@ -294,5 +314,9 @@
     }
     button.sendButton {
         width: 100%;
+    }
+    .button {
+        max-width: 100%;
+        justify-content: center;
     }
 }
