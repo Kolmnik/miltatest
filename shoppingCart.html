@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="/style/fonts.css">
     <link rel="stylesheet" href="/style/currentProduct.css">
     <link rel="stylesheet" href="/style/shoppingCart.css">
-    <link rel="stylesheet" href="/style/currentOrder.css">
-    <link rel="stylesheet" href="/style/orderProductSell.css">
-
 
     <!--    add fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,144 +90,187 @@
 <div class="mainSection">
 
     <div class="innerSection">
+
+
         <div class="currentProductSection">
             <div class="headerShoppingCart">
-                <h1>Оформление заказа</h1>
+                <h1>Корзина</h1>
+                <p class="low gray__text" >8 товаров</p>
             </div>
             <div class="twoSection">
                 <div class="left">
-
-                    <div class="bigcard">
-                        <div class="header">
-                            <h4>В заказе 3 товара</h4>
-                            <div class="faq">
-                                <p class="low blue__text">Свернуть товары</p>
+                    <div class="sectionCardsShop">
+                        <div class="checkedCard">
+                            <div class="inputChek">
+                                <input type="checkbox" name="checkAll" id="checkAll">
+                                <label for="checkAll">Выбрать все</label>
+                            </div>
+                            <div class="deleteButton">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 10.5L8 6.5L4 10.5" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                    <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
                                 </svg>
-                            </div>
-                        </div>
-                        <div class="product__list">
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Очки БИОЛАЗЕР</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">1 900 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Очень длинное название аппарата</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
 
-                        </div>
-                        <div class="hideProduct">
-                            <div class="faq">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 6L9 12L15 18" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p class="blue__text">Изменить заказ</p>
+                                <p class="low gray__text">Удалить (3)</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">1. Данные заказчика</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Физическое лицо</p>
-                            <p class="low picked">Юридическое лицо</p>
-                        </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_name" placeholder="Иван Иванов">
-                            <label class="text-field__label" for="answers_name">Имя и фамилия</label>
-                        </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_number" placeholder="+7 800 123-45-67">
-                            <label class="text-field__label" for="answers_number">Номер телефона</label>
-                        </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_email" placeholder="mail@mail.ru">
-                            <label class="text-field__label" for="answers_email">E-mail</label>
-                        </div>
-                    </div>
-
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">2. Способ получения</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Самовывоз из магазина</p>
-                            <p class="low picked">Доставка</p>
-                        </div>
-                        <div class="mapsInfo">
-                            <div class="left--map">
-                                <div class="address_info">
-                                    <p class="gray__text">Адрес</p>
-                                    <p>111250, г. Москва, 2-й Кабельный проезд, д. 1, к. 2</p>
-                                    <a href="#" class="blue__text howFind">
-                                        <p class="low">
-                                            Как нас найти
+                        <div class="card">
+                            <div class="inputChek">
+                                <input type="checkbox" name="">
+                                <div class="main">
+                                    <img src="media/categories.png" alt="">
+                                    <div class="text">
+                                        <p class="name">Аппарат МИЛТА СПОРТ</p>
+                                        <p class="low gray__text ">Мощность: 5-7 Вт</p>
+                                        <a href="#">
+                                            <p class="low lightGreen__text">Выгодный комплект</p>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 12L10 8L6 4" stroke="#5DA619" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <p class="middle weight500">35 000 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rightSideA">
+                                <div class="counter">
+                                    <div class="low">
+                                        <p class="">
+                                            -
                                         </p>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.5 12C18.5 15.5899 15.5899 18.5 12 18.5C8.41015 18.5 5.5 15.5899 5.5 12C5.5 8.41015 8.41015 5.5 12 5.5C15.5899 5.5 18.5 8.41015 18.5 12Z" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.0596 9.99989C10.2163 9.55434 10.5257 9.17863 10.9329 8.93931C11.3401 8.7 11.8188 8.61252 12.2844 8.69237C12.7499 8.77222 13.1721 9.01424 13.4763 9.37558C13.7805 9.73691 13.9469 10.1942 13.9462 10.6666C13.9462 11.9999 11.9462 12.6666 11.9462 12.6666" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 15.3333H12.0071" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </div>
+                                    <div class="numbers">
+                                        <p class="">
+                                            1
+                                        </p>
+                                    </div>
+                                    <div class="low">
+                                        <p class="">
+                                            +
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="deleteButton">
+
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                        <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
+                                    </svg>
+
+                                    <p class="low gray__text">Удалить (3)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="complect">
+                            <div class="card first">
+                                <div class="inputChek">
+                                    <input type="checkbox" name="">
+                                    <div class="main">
+                                        <img src="media/categories.png" alt="">
+                                        <div class="text">
+                                            <p class="name">Аппарат МИЛТА СПОРТ</p>
+                                            <p class="low gray__text ">Мощность: 5-7 Вт</p>
+                                            <p class="middle weight500">35 000 ₽ </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightSideA">
+                                    <div class="counter">
+                                        <div class="low">
+                                            <p class="">
+                                                -
+                                            </p>
+                                        </div>
+                                        <div class="numbers">
+                                            <p class="">
+                                                1
+                                            </p>
+                                        </div>
+                                        <div class="low">
+                                            <p class="">
+                                                +
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="deleteButton">
+
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                            <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
                                         </svg>
-                                    </a>
+
+                                        <p class="low gray__text">Удалить (3)</p>
+                                    </div>
                                 </div>
-                                <div class="address_info">
-                                    <p class="gray__text">Режим работы</p>
-                                    <p>Пн-Чт 09:00–16:00, Пт 09:00–14:00</p>
-                                    <p>Обед 12:30–13:30</p>
-                                    <p>Сб-Вс выходные</p>
+
+                            </div>
+                            <div class="card">
+                                <div class="inputChek">
+                                    <input type="checkbox" name="">
+                                    <div class="main">
+                                        <img src="media/categories.png" alt="">
+                                        <div class="text">
+                                            <p class="name">Аппарат МИЛТА СПОРТ</p>
+                                            <p class="low gray__text ">Мощность: 5-7 Вт</p>
+                                            <p class="middle weight500">35 000 ₽</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="address_info">
-                                    <p class="gray__text">Стоимость доставки</p>
-                                    <p>Бесплатно</p>
+                                <div class="deleteButton">
+
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                        <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
+                                    </svg>
+
+                                    <p class="low gray__text">Удалить (3)</p>
                                 </div>
                             </div>
-                            <div class="right--map">
-                                <img src="media/map.png" alt="">
+                            <div class="card">
+                                <div class="inputChek">
+                                    <input type="checkbox" name="">
+                                    <div class="main">
+                                        <img src="media/categories.png" alt="">
+                                        <div class="text">
+                                            <p class="name">Аппарат МИЛТА СПОРТ</p>
+                                            <p class="low gray__text ">Мощность: 5-7 Вт</p>
+                                            <p class="middle weight500">35 000 ₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deleteButton">
+
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                        <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
+                                    </svg>
+
+                                    <p class="low gray__text">Удалить (3)</p>
+                                </div>
                             </div>
-                        </div>
+                            <div class="card">
+                                <div class="inputChek">
+                                    <input type="checkbox" name="">
+                                    <div class="main">
+                                        <img src="media/categories.png" alt="">
+                                        <div class="text">
+                                            <p class="name">Аппарат МИЛТА СПОРТ</p>
+                                            <p class="low gray__text ">Мощность: 5-7 Вт</p>
+                                            <p class="middle weight500">35 000 ₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="deleteButton">
 
-                        <div class="anotherPeople">
-                            <input type="checkbox" name="anotherPeople" id="anotherPeople">
-                            <label for="anotherPeople">Заказ получит другой человек</label>
-                        </div>
-                    </div>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12L12 4" stroke="#929292" stroke-linecap="round"/>
+                                        <path d="M12 12L4 4" stroke="#929292" stroke-linecap="round"/>
+                                    </svg>
 
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">3. Способ оплаты</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Безналичная оплата</p>
-                            <p class="low picked">При получении</p>
-                            <p class="low">Онлайн</p>
-                        </div>
-                        <div class="hideProduct">
-                                <p class="">В магазине можно оплатить наличными или картой</p>
+                                    <p class="low gray__text">Удалить (3)</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

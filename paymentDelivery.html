@@ -6,13 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/order.css">
     <link rel="stylesheet" href="/style/animation.css">
     <link rel="stylesheet" href="/style/fonts.css">
-    <link rel="stylesheet" href="/style/currentProduct.css">
-    <link rel="stylesheet" href="/style/shoppingCart.css">
-    <link rel="stylesheet" href="/style/currentOrder.css">
-    <link rel="stylesheet" href="/style/orderProductSell.css">
-
 
     <!--    add fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,325 +86,334 @@
     </div>
 </header>
 
+
 <div class="mainSection">
 
     <div class="innerSection">
-        <div class="currentProductSection">
-            <div class="headerShoppingCart">
-                <h1>Оформление заказа</h1>
-            </div>
-            <div class="twoSection">
-                <div class="left">
 
-                    <div class="bigcard">
-                        <div class="header">
-                            <h4>В заказе 3 товара</h4>
-                            <div class="faq">
-                                <p class="low blue__text">Свернуть товары</p>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 10.5L8 6.5L4 10.5" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
+        <div class="bigBlock">
+            <h1>Оплата и доставка</h1>
+            <div class="smallBlock">
+                <h2>Варианты оплаты</h2>
+                <div class="cardSection">
+                    <div class="card">
+                        <h3>Онлайн</h3>
+                        <div class="card__article">
+                            <p>Банковская карта</p>
+                            <img src="media/Payment_Icon.png" alt="">
+                            <img src="media/Payment_Icon.png" alt="">
+                            <img src="media/Payment_Icon.png" alt="">
+                            <img src="media/Payment_Icon.png" alt="">
                         </div>
-                        <div class="product__list">
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Очки БИОЛАЗЕР</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">1 900 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Очень длинное название аппарата</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-                            <div class="product__list-card">
-                                <p class="gray__text low product__id">12365548</p>
-                                <p class="product__name">Аппарат МИЛТА БИО</p>
-                                <p class="gray__text low product__property">Мощность: 0-14 Вт</p>
-                                <p class="gray__text low product__count">1 шт.</p>
-                                <p class="weight500 middle product__price">38 700 ₽</p>
-                            </div>
-
+                        <div class="card__article">
+                            <p>SberPay</p>
+                            <img src="media/Payment_Icon.png" alt="">
                         </div>
-                        <div class="hideProduct">
-                            <div class="faq">
+                        <div class="card__article">
+                            <p>Альфа-Клик</p>
+                            <img src="media/Payment_Icon.png" alt="">
+                        </div>
+                        <div class="card__article">
+                            <p>Тинькофф Банк</p>
+                            <img src="media/Payment_Icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>При получении</h3>
+                        <div class="card__article">
+                            <p>В нашем магазине можно оплатить наличными или банковской картой.</p>
+                        </div>
+                        <div style="margin-top: 5px" class="card__article">
+                            <a href="#" class="blue__text howFind">Как купить
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 6L9 12L15 18" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 12C18.5 15.5899 15.5899 18.5 12 18.5C8.41015 18.5 5.5 15.5899 5.5 12C5.5 8.41015 8.41015 5.5 12 5.5C15.5899 5.5 18.5 8.41015 18.5 12Z" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.0596 9.99989C10.2163 9.55434 10.5257 9.17863 10.9329 8.93931C11.3401 8.7 11.8188 8.61252 12.2844 8.69237C12.7499 8.77222 13.1721 9.01424 13.4763 9.37558C13.7805 9.73691 13.9469 10.1942 13.9462 10.6666C13.9462 11.9999 11.9462 12.6666 11.9462 12.6666" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15.3333H12.0071" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p class="blue__text">Изменить заказ</p>
-                            </div>
+                            </a>
+                        </div>
+                        <div style="margin-top: 15px" class="card__article">
+                            <p>Курьеру при доставке в пределах 0-30 км МКАД можно оплатить только наличными.</p>
                         </div>
                     </div>
-
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">1. Данные заказчика</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Физическое лицо</p>
-                            <p class="low picked">Юридическое лицо</p>
+                    <div class="card">
+                        <h3>Безналичная оплата </h3>
+                        <div class="card__article">
+                            <p>Вы можете скачать готовую квитанцию для оплаты после оформления заказа. Мы вышлем счет на оплату на вашу электронную почту.</p>
                         </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_name" placeholder="Иван Иванов">
-                            <label class="text-field__label" for="answers_name">Имя и фамилия</label>
-                        </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_number" placeholder="+7 800 123-45-67">
-                            <label class="text-field__label" for="answers_number">Номер телефона</label>
-                        </div>
-                        <div class="input text-field text-field_floating">
-                            <input class="text-field__input" type="text" id="answers_email" placeholder="mail@mail.ru">
-                            <label class="text-field__label" for="answers_email">E-mail</label>
-                        </div>
-                    </div>
-
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">2. Способ получения</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Самовывоз из магазина</p>
-                            <p class="low picked">Доставка</p>
-                        </div>
-                        <div class="mapsInfo">
-                            <div class="left--map">
-                                <div class="address_info">
-                                    <p class="gray__text">Адрес</p>
-                                    <p>111250, г. Москва, 2-й Кабельный проезд, д. 1, к. 2</p>
-                                    <a href="#" class="blue__text howFind">
-                                        <p class="low">
-                                            Как нас найти
-                                        </p>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.5 12C18.5 15.5899 15.5899 18.5 12 18.5C8.41015 18.5 5.5 15.5899 5.5 12C5.5 8.41015 8.41015 5.5 12 5.5C15.5899 5.5 18.5 8.41015 18.5 12Z" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.0596 9.99989C10.2163 9.55434 10.5257 9.17863 10.9329 8.93931C11.3401 8.7 11.8188 8.61252 12.2844 8.69237C12.7499 8.77222 13.1721 9.01424 13.4763 9.37558C13.7805 9.73691 13.9469 10.1942 13.9462 10.6666C13.9462 11.9999 11.9462 12.6666 11.9462 12.6666" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 15.3333H12.0071" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="address_info">
-                                    <p class="gray__text">Режим работы</p>
-                                    <p>Пн-Чт 09:00–16:00, Пт 09:00–14:00</p>
-                                    <p>Обед 12:30–13:30</p>
-                                    <p>Сб-Вс выходные</p>
-                                </div>
-                                <div class="address_info">
-                                    <p class="gray__text">Стоимость доставки</p>
-                                    <p>Бесплатно</p>
-                                </div>
-                            </div>
-                            <div class="right--map">
-                                <img src="media/map.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="anotherPeople">
-                            <input type="checkbox" name="anotherPeople" id="anotherPeople">
-                            <label for="anotherPeople">Заказ получит другой человек</label>
-                        </div>
-                    </div>
-
-                    <div class="bigcard">
-                        <h4 class="black__text weight500">3. Способ оплаты</h4>
-                        <div class="dataSwitch">
-                            <p class="low">Безналичная оплата</p>
-                            <p class="low picked">При получении</p>
-                            <p class="low">Онлайн</p>
-                        </div>
-                        <div class="hideProduct">
-                                <p class="">В магазине можно оплатить наличными или картой</p>
+                        <div class="card__article">
+                            <p>Ваш заказ не будет выполнен до тех пор, пока денежные средства не поступят на наш счет.</p>
                         </div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="card summaCrad">
-                        <div class="text__row">
-                            <p class="productFont weight700">Итого</p>
-                            <p class="productFont weight700">40 600 ₽</p>
+            </div>
+            <div class="smallBlock">
+                <h2>Варианты получения</h2>
+                <div class="cardSection">
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px">Самовывоз</h3>
+                        <div style="margin-top: 0" class="card__article">
+                            <p class="gray">Адрес</p>
                         </div>
-                        <div class="text__row">
-                            <p class="gray__text">Товары (3)</p>
-                            <p class="gray__text">45 800 ₽</p>
+                        <div style="margin-top: 5px" class="card__article">
+                            <p>111250, г. Москва, 2-й Кабельный проезд, д. 1, к. 2</p>
                         </div>
-                        <div class="text__row">
-                            <p class="gray__text">Скидки</p>
-                            <p class="gray__text">-5 200 ₽</p>
+                        <div style="margin-top: 5px" class="card__article">
+                            <a href="#" class="blue__text howFind">Как нас найти
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.5 12C18.5 15.5899 15.5899 18.5 12 18.5C8.41015 18.5 5.5 15.5899 5.5 12C5.5 8.41015 8.41015 5.5 12 5.5C15.5899 5.5 18.5 8.41015 18.5 12Z" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.0596 9.99989C10.2163 9.55434 10.5257 9.17863 10.9329 8.93931C11.3401 8.7 11.8188 8.61252 12.2844 8.69237C12.7499 8.77222 13.1721 9.01424 13.4763 9.37558C13.7805 9.73691 13.9469 10.1942 13.9462 10.6666C13.9462 11.9999 11.9462 12.6666 11.9462 12.6666" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15.3333H12.0071" stroke="#1E63CA" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
-                        <div class="promo">
-                            <input type="text" class="promo">
+                        <div  class="card__article">
+                            <p class="gray">Режим работы</p>
                         </div>
-                        <div class="button">
-                            <p class="white__text">Перейти к оформлению</p>
+                        <div style="margin-top: 5px" class="card__article">
+                            <p>Пн-Чт 09:00–16:00, <br> Пт 09:00–14:00 <br> Обед 12:30–13:30 <br> Сб-Вс выходные</p>
                         </div>
-                        <div class="info">
-                            <p class="low gray__text">
-                                <i class="black__text">Стоимость</i> доставки рассчитывается на этапе оформления заказа
-                            </p>
+                    </div>
+                    <div class="card">
+                        <h3>Курьером по Москве и МО</h3>
+                        <div class="card__article">
+                            <p>В пределах МКАД — 360 ₽</p>
+                        </div>
+                        <div class="card__article">
+                            <p>В пределах 10 км от МКАД — 600 ₽</p>
+                        </div>
+                        <div class="card__article">
+                            <p>В пределах 30 км от МКАД — 1 200 ₽</p>
+                        </div>
+                        <div class="card__article">
+                            <p>Оплатить можно как при получении, так и онлайн. Точное время доставки уточняется по телефону</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Доставка службой по России</h3>
+                        <div class="card__article">
+                            <p>Мы осуществляем доставку только до терминала отправления конкретной службы доставки в Москве и взымаем 360 ₽ при заказе до 3000 ₽.</p>
+                        </div>
+                        <div class="card__article">
+                            <p>Мы работаем со следующими транспортными службами: Деловые линии, СДЭК, Почта Росиии, EMS.</p>
+                        </div>
+                        <div class="card__article">
+                            <p>Стоимость страховки и доставки транспортной службой будет указана в счете на оплату, который
+                                вы получите от нас. Оплата услуг транспортной компании происходит в момент получения груза.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="showMe productShowMe">
-            <p class="huge weight700">Вам пригодится</p>
-            <div class="newsBlock">
-
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
+        <div class="bigBlock">
+            <h1>Гарантийное обслуживание и ремонт</h1>
+            <div class="smallBlock ">
+                <div class="cardSection nomt">
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__articleTwoSec">
+                            <img src="media/icon_order.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Банковская карта</h3>
+                                <p>Гарантия распространяется на любой аппарат МИЛТА, купленный у нас или у наших дилеров</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p class="sales gray__text">2500 ₽ <i style="text-decoration: none" class="white__text">-10%</i></p>
-                        <p class="count red__text weight500">1900 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-                <div class="productItem">
-                    <div class="product__img">
-                        <img src="/media/product.png" alt="">
-                    </div>
-                    <div class="product__info">
-                        <p style="height: 30px" class="sales white__text">00</p>
-                        <p class="count blue__text weight500">300 ₽</p>
-                        <p>Очки БИОЛАЗЕР</p>
-                    </div>
-                    <a href="#" class="product_button">
-                        <p style="line-height: 114%">В корзину</p>
-                    </a>
-                </div>
-
             </div>
-            <div class="leftButtonSlide">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13L7 7L1 1" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="smallBlock">
+                <h2>Обслуживание при наличии гарантии</h2>
+                <div class="cardSection__double">
+                    <div class="card">
+                        <div class="card__article">
+                            <p>Осуществляется при вызволении следующих условий:</p>
+                        </div>
+                        <div class="card__article">
+                            <img src="media/check.png" alt="">
+                            <p>Наличие гарантии на аппарат МИЛТА</p>
+                        </div>
+                        <div class="card__article">
+                            <img src="media/check.png" alt="">
+                            <p>Целостность пломбы, которая гарантирует, что аппарат не вскрывался</p>
+                        </div>
+                        <div class="card__article">
+                            <img src="media/check.png" alt="">
+                            <p>Наличие паспорта с соответствующим номером аппарата</p>
+                        </div>
+                        <div style="margin-top: 30px" class="card__articleTwoSec">
+                            <img src="media/attention.png" alt="">
+                            <p>Услуги по техническому обслуживанию и гарантийному ремонту не предоставляются при наличии внешних механических повреждений. Перед отправкой аппарата проконсультируйтесь с нашим специалистом по номеру <span class="weight500 blue"> +7 (495) 785-87-46. </span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Гарантия на аппараты МИЛТА</h3>
+                        <div class="card__article--withDots">
+                            <p>Милта Ф8</p>
+                            <div class="dots"></div>
+                            <p class="weight500 blue">2 года</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Милта Ф-5</p>
+                            <div class="dots"></div>
+                            <p class="weight500 blue">2 года + 3 года доп.</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Милта Ф8</p>
+                            <div class="dots"></div>
+                            <p class="weight500 blue">2 года</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Милта Ф8</p>
+                            <div class="dots"></div>
+                            <p class="weight500 blue">2 года</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Милта Ф8</p>
+                            <div class="dots"></div>
+                            <p class="weight700 blue">2 года</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="rightButtonSlide">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 13L7 7L1 1" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <div class="smallBlock">
+                <h2>Обслуживание при отсутствии гарантии</h2>
+                <div class="cardSection__double">
+                    <div class="card">
+                        <div class="card__article">
+                            <p>В случае необходимости замены комплектующих элементов стоимость израсходованных при ремонте материалов рассчитывается отдельно.</p>
+                        </div>
+                        <div style="margin-top: 30px" class="card__articleTwoSec">
+                            <img src="media/attention.png" alt="">
+                            <div class="card__articleCol">
+                                <h3>Внимание!</h3>
+                                <p>Стоимость работ и комплектующих элементов может отличаться от указанной. Рекомендуем проконсультироваться с нашим специалистом по номеру
+                                    <span class="weight500 blue"> +7 (495) 785-87-46.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Ориентировочная стоимость работ</h3>
+                        <div class="card__article--withDots">
+                            <p>Ремонтные работы</p>
+                            <div class="dots"></div>
+                            <p class="blue">1 000 — 2 000 ₽</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Тестирование исправного аппарата</p>
+                            <div class="dots"></div>
+                            <p class="blue">500 ₽</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Тестирование исправного аппарата</p>
+                            <div class="dots"></div>
+                            <p class="blue">500 ₽</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Тестирование исправного аппарата</p>
+                            <div class="dots"></div>
+                            <p class="blue">500 ₽</p>
+                        </div>
+                        <div class="card__article--withDots">
+                            <p>Тестирование исправного аппарата</p>
+                            <div class="dots"></div>
+                            <p class="blue">500 ₽</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="searchBlock order1">
+            <div class="img_pos">
+                <img src="/media/photo_order.png" alt="">
+            </div>
+            <div class="article">
+                <h2 class="white__text">Ответим на все ваши вопросы!</h2>
+                <form action="POST" class="answers">
+                    <div class="input text-field text-field_floating">
+                        <input class="text-field__input" type="text" id="answers_name" placeholder="Иван Иванов">
+                        <label class="text-field__label" for="answers_name">Имя и фамилия</label>
+                    </div>
+                    <div class="input text-field text-field_floating">
+                        <input class="text-field__input" type="text" id="answers_number" placeholder="+7 800 123-45-67">
+                        <label class="text-field__label" for="answers_number">Номер телефона</label>
+                    </div>
+                    <div class="input text-field text-field_floating">
+                        <input class="text-field__input" type="text" id="answers_email" placeholder="mail@mail.ru">
+                        <label class="text-field__label" for="answers_email">E-mail</label>
+                    </div>
+                    <div class="input text-field column">
+                        <textarea class="text-field__input bigInput" name="answers_text" id="answers_text" placeholder="Введите текст вопроса..." maxlength="200" cols="30" rows="10"></textarea>
+                        <div class="text-field__counter"></div>
+                    </div>
+                    <div class="input checkboxInput">
+                        <input type="checkbox" class="custom-checkbox" id="for_home" name="for_home" value="yes">
+                        <label for="for_home">
+                            <p class="white__text name__label">Согласен с политикой конфиденциальности сайта</p>
+                        </label>
+                    </div>
+                    <button class="sendButton">Отправить вопрос</button>
+
+                    <script>
+                        const elemLogin = document.querySelector('#answers_text');
+                        const elemCounter = elemLogin.nextElementSibling;
+                        const maxLength = elemLogin.maxLength;
+                        const updateCounter = (e) => {
+                            const len = e ? e.target.value.length : 0;
+                            elemCounter.textContent = `${len} / ${maxLength}`;
+                        }
+                        updateCounter();
+                        elemLogin.addEventListener('keyup', updateCounter);
+                        elemLogin.addEventListener('keydown', updateCounter);
+                    </script>
+                </form>
             </div>
         </div>
 
@@ -493,7 +498,6 @@
     </div>
 </footer>
 
-<script src="/scripts/animation.js"></script>
 
 </body>
 </html>

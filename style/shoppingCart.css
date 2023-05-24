@@ -1,0 +1,150 @@
+.headerShoppingCart {
+    display: flex;
+    align-items: flex-start;
+}
+input.promo {
+    padding: 18px 24px;
+    border: 1px solid #d9d9d9;
+    background-color: #F7FAFF;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.text__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.deleteButton {
+    cursor: pointer;
+}
+.inputChek {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.checkedCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 21px 30px;
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 5px #EBF3FF;
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sectionCardsShop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionCardsShop .card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+.sectionCardsShop .card .counter {
+    display: flex;
+    gap: 10px;
+    padding: 10px 22px;
+    border: 1px solid #d9d9d9;
+    background-color: #F7FAFF;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.sectionCardsShop .card .counter p {
+    min-width: 16px;
+    text-align: center;
+}
+
+.sectionCardsShop .card .main {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sectionCardsShop .card .main img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #EBF3FF;
+}
+
+.card .inputChek {
+    gap: 10px;
+    width: 100%;
+}
+.sectionCardsShop .card .text a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px 5px 0;
+    width: fit-content;
+}
+.sectionCardsShop .card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card .deleteButton p {
+    width: max-content;
+}
+
+.complect {
+    background-color: #fff;
+    border-radius: 30px;
+}
+.rightSideA {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media (max-width: 1023px) {
+    .twoSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .right {
+        display: flex !important;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .right .card {
+        width: 100%;
+    }
+    .sectionCardsShop .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .rightSideA {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .rightSideA .deleteButton {
+        margin-top: 0;
+    }
+}

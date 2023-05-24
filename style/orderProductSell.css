@@ -1,0 +1,87 @@
+.bigcard {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hideProduct {
+    width: fit-content;
+    margin-top: 30px;
+    padding: 5px;
+    padding-left: 0px;
+}
+.faq {
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dataSwitch {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.dataSwitch p {
+    padding: 10px 24px;
+    border: 1px solid  #D9D9D9;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input.text-field__input {
+    max-width: 400px;
+}
+
+.dataSwitch p.picked {
+    color: #1E63CA;
+    border: 1px solid  #1E63CA;
+}
+
+.anotherPeople {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.mapsInfo {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.mapsInfo .left--map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.right--map {
+    width: 50%;
+    height: 258px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+a.howFind {
+    width: fit-content;
+}

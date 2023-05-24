@@ -60,6 +60,7 @@
 }
 
 
+
 @media (max-width: 1140px) {
     .product__list-card {
         grid-template-columns: repeat(3, max-content);

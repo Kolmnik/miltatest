@@ -30,6 +30,123 @@ body {
     margin-right: 5px;
 }
 
+/* --------------------------------  FORM -------------------------------------*/
+
+.answers {
+    margin-top: 30px;
+}
+.text-field_floating {
+    position: relative;
+}
+.text-field_floating .text-field__input {
+    /*line-height: 1.25;*/
+    padding: 10px 24px;
+    border-radius: 20px;
+    border: 1px solid #1E63CA;
+    text-decoration: none;
+    min-height: 56px;
+}
+.text-field_floating .text-field__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 24px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    margin-top: 15px;
+
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    color: #BABABA;
+}
+.text-field_floating .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+.text-field_floating .text-field__input::placeholder {
+    font-size: 16px;
+    color: transparent;
+}
+.text-field_floating .text-field__input:focus,
+.text-field_floating .text-field__input:not(:placeholder-shown) {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.text-field_floating .text-field__input:focus~.text-field__label,
+.text-field_floating .text-field__input:not(:placeholder-shown)~.text-field__label {
+    opacity: .65;
+    transform: scale(.85) translateY(-10px) translateX(5px);
+}
+
+
+.input {
+    display: flex;
+}
+
+.input input {
+    margin-top: 15px;
+}
+
+.input .text-field__input {
+    font-family: 'Rubik';
+    font-style: normal;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0B121C;
+}
+
+.bigInput {
+    border-radius: 30px;
+    border: 1px solid #1E63CA;
+    padding: 10px 25px;
+
+    height: 95px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 15px;
+}
+
+.bigInput::-webkit-scrollbar {
+    display: none;
+}
+
+.bigInput::placeholder {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #BABABA;
+}
+
+.article p.name__label {
+    max-width: 100%;
+}
+
+.text-field__counter {
+    margin-left: 90%;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #D9D9D9;
+}
+
+
 /* ------------------------- modal ----------------------*/
 
 
