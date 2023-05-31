@@ -153,6 +153,15 @@ label {
 .helper .whitebutton {
     padding: 5px;
 }
+
+.checkBox .custom-checkbox+label{
+    display: flex;
+}
+
+.input {
+    width: 100%;
+}
+
 @media (max-width: 1023px) {
     .twoSection {
         display: flex;
