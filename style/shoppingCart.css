@@ -121,6 +121,38 @@ label {
 }
 
 
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.helper {
+    max-width: 560px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 60px 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.helper p {
+    text-align: center;
+}
+.helper .button {
+    width: 100%;
+    background-color: #1E63CA;
+    border-radius: 30px;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.helper .whitebutton {
+    padding: 5px;
+}
 @media (max-width: 1023px) {
     .twoSection {
         display: flex;
@@ -146,5 +178,11 @@ label {
     }
     .rightSideA .deleteButton {
         margin-top: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .helper {
+        padding: 20px 30px;
     }
 }
