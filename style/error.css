@@ -1,0 +1,59 @@
+.errorSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.errorSection .innerCard, .errorSection .innerCard .textSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.errorSection .innerCard .textSection {
+    gap: 15px;
+    width: 100%;
+}
+
+.errorSection .innerCard .textSection .button {
+    margin-top: 15px;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 14px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.errorSection .innerCard {
+    height: 790px;
+    position: relative;
+    background-color: #1E63CA;
+    border-radius: 30px;
+    padding: 60px;
+    min-width: 560px;
+}
+
+.errorSection .innerCard img {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media (max-width: 770px) {
+    .errorSection {
+        width: 100%;
+    }
+    .errorSection .innerCard {
+        height: fit-content;
+        width: 100%;
+        min-width: auto;
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+    .errorSection .innerCard img {
+        width: 100%;
+        position: relative;
+        padding-top: 30px;
+        bottom: 0;
+    }
+}
