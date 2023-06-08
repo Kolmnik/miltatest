@@ -128,6 +128,7 @@ label {
     margin-top: 30px;
 }
 .helper {
+    width: 100%;
     max-width: 560px;
     background-color: #fff;
     border-radius: 30px;
@@ -157,7 +158,12 @@ label {
 .checkBox .custom-checkbox+label{
     display: flex;
 }
-
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .input {
     width: 100%;
 }

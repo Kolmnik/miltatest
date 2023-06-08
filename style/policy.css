@@ -1,0 +1,15 @@
+.policySection {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 5px #EBF3FF;
+}
+.policySection p.middle {
+    margin-top: 20px;
+}
+
+
