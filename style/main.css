@@ -222,14 +222,14 @@ header {
     z-index: 99999;
     display: flex;
     justify-content: center;
-    height: 87px;
+    height: 88px;
 }
 
 .inner {
     max-width: 1520px;
     width: 100%;
     padding: 0 40px;
-    margin: 20px 0;
+    margin: 16px 0;
 }
 
 header .inner {
@@ -1097,9 +1097,70 @@ footer  {
     overflow: hidden;
     border-radius: 30px;
 }
+.searchHelper.hidden {
+    display: none;
+}
+.search.hidden .cross,.search.hidden input  {
+    display: none;
+}
+.loopa {
+    cursor: pointer;
+}
+.search.active {
+    transition: width .2s ease-in;
+    position: relative;
+    padding: 16px 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px !important;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 0px 31px rgba(115, 130, 152, 0.32);
+}
+.search.active .cross {
+    cursor: pointer;
+    margin-right: 24px;
+}
 
+.search.active input {
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+    width: 94%;
+}
 
+.searchHelper.active {
+    position: absolute;
+    top: 65px;
+    background-color: #fff;
+    left: 0;
+    padding: 8px;
+    border-radius: 20px;
+    width: 100%;
 
+}
+.searchHelper.active .answer--helper {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0 !important;
+}
+
+.searchHelper.active .answer--helper:hover {
+    background-color: #EBF3FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.shadowBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    z-index: 100;
+}
 
 /* ----------------------------    laptop__size      ------------------------------------*/
 
