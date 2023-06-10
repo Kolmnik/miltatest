@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const menuHeader = document.querySelector('#menuFull')
     const headerInfoBlock = document.querySelector('.header_info')
     const shadowBlock = document.querySelector('.shadowBlock')
+    const searchHelper = document.querySelector('.searchHelper')
 
     buttonHeaderSearch.addEventListener('click', (e) => {
         if (menuHeader.style.display !== 'none'){
@@ -13,15 +14,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHeader.classList.add('active')
             searchHeader.classList.remove('hidden')
             shadowBlock.style.display = 'block'
+            searchHelper.classList.add('active')
+            searchHelper.classList.remove('hidden')
+
         } else {
             menuHeader.style.display = 'flex'
             headerInfoBlock.style.width = ''
             searchHeader.classList.add('hidden')
             searchHeader.classList.remove('active')
             shadowBlock.style.display = 'none'
+            searchHelper.classList.remove('active')
+            searchHelper.classList.add('hidden')
         }
     })
     shadowBlock.addEventListener('click', ()=> {
         shadowBlock.style.display = 'none'
+        searchHelper.classList.remove('active')
+        searchHelper.classList.add('hidden')
     })
 })
