@@ -53,7 +53,7 @@ p.medium {
     font-size: 16px;
 }
 
-p.low {
+p.low, i.low {
     font-size: 14px;
 }
 p.tiny {
@@ -66,6 +66,10 @@ p, a, li, label {
 
 a {
     color: #1E63CA;
+}
+
+p.disabled {
+    color: #BABABA;
 }
 
 .white__text {

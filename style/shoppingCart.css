@@ -2,6 +2,10 @@
     display: flex;
     align-items: flex-start;
 }
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
 input.promo {
     padding: 18px 24px;
     border: 1px solid #d9d9d9;
@@ -26,7 +30,7 @@ label {
 }
 .inputChek {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -86,18 +90,32 @@ label {
 .sectionCardsShop .card .main img {
     max-width: 100px;
     height: 100px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0px 0px 5px #EBF3FF;
+}
+.counter .low {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .card .inputChek {
     gap: 10px;
     width: 100%;
 }
+
+
+.sectionCardsShop .card.first {
+    padding: 30px 30px 30px 30px;
+    border-bottom: 1px solid #EDEDED;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 .sectionCardsShop .card .text a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     padding: 5px 5px 5px 0;
     width: fit-content;
 }
@@ -117,7 +135,7 @@ label {
 .rightSideA {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 
