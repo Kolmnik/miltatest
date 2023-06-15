@@ -199,11 +199,7 @@ label {
     .right .card {
         width: 100%;
     }
-    .sectionCardsShop .card {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
+
     .rightSideA {
         display: flex;
         align-items: center;
@@ -214,8 +210,28 @@ label {
     }
 }
 
+@media (max-width: 768px) {
+    .sectionCardsShop .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionCardsShop .card .rightSideA {
+        margin-left: 126px;
+    }
+}
+@media (max-width: 425px) {
+    .sectionCardsShop .card .rightSideA {
+        margin-left: 0px;
+    }
+}
+
 @media (max-width: 360px) {
+    .sectionCardsShop .card .main img {
+        max-width: 70px;
+        height: 70px;
+    }
     .helper {
         padding: 20px 30px;
     }
+
 }
