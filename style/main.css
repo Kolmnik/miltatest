@@ -41,7 +41,7 @@ body {
 .text-field_floating .text-field__input {
     /*line-height: 1.25;*/
     padding: 10px 24px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid #1E63CA;
     text-decoration: none;
     min-height: 56px;
@@ -84,7 +84,10 @@ body {
     transform: scale(.85) translateY(-10px) translateX(5px);
 }
 
+input[type=textarea] {
+    border-radius: 28px !important;
 
+}
 .input {
     display: flex;
 }

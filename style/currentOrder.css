@@ -7,7 +7,7 @@
 .product__list-card {
     display: grid;
     grid-template-columns: max-content max-content auto max-content 12%;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
 }
 .product__list-card:not(:last-child) {

@@ -15,6 +15,24 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+
+}
+
+.faq.down {
+    padding: 14px 32px;
+    border: 1px solid #1E63CA;
+    border-radius: 30px;
+}
+.header--withButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--withButton .enterButton, .header--withButton .enterButton a {
+    display: flex;
+    align-items: center;
 }
 
 .hideProduct {
@@ -22,9 +40,6 @@
     margin-top: 30px;
     padding: 5px;
     padding-left: 0px;
-}
-.faq {
-    cursor: pointer;
 }
 
 .left {
@@ -84,4 +99,15 @@ input.text-field__input {
 }
 a.howFind {
     width: fit-content;
+}
+
+
+@media (max-width: 768px) {
+    .header--withButton, .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .dataSwitch {
+        flex-direction: column;
+    }
 }
