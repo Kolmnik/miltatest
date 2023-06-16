@@ -161,6 +161,8 @@
 
 .complexCard .card img {
     height: fit-content;
+    max-width: 70px;
+    max-height: 70px;
 }
 .complexCard .card .info {
     margin-top: 0;
@@ -176,7 +178,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid #EDEDED;
     align-items: center;
 }
 
@@ -256,8 +258,19 @@
     }
     .changeHeader p {
         padding: 6px 14px;
+        display: block;
     }
-}
+
+    .changeHeader p {
+        text-wrap: nowrap;
+    }
+
+    .changeHeader {
+        overflow: scroll;
+    }
+    .changeHeader::-webkit-scrollbar {
+        display: none;
+    }
 @media (max-width: 1023px) and (min-width: 767px) {
     .twoSection {
         gap: 0;
@@ -309,6 +322,10 @@
     .changeHeader p {
         padding: 6px 14px;
     }
+    .twoSection {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -322,6 +339,7 @@
     }
     .imgSection {
         min-width: 320px;
+        max-width: 100%;
     }
     .twoSection {
         display: flex;
@@ -365,6 +383,14 @@
     }
     .changeHeader p {
         padding: 6px 14px;
+        display: block;
+        text-wrap: nowrap;
+    }
+    .changeHeader {
+        overflow: scroll;
+    }
+    .changeHeader::-webkit-scrollbar {
+        display: none;
     }
     .right {
         display: none;
