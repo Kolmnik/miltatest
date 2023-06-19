@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
     searchInput.addEventListener('input', function (e){
         if (this.value != ' ' || this.value != ''){
+            shadowBlock.style.display = 'block'
+            searchHelper.classList.add('active')
+            searchHelper.classList.remove('hidden')
         }
     })
 })
