@@ -262,7 +262,7 @@
     }
 
     .changeHeader p {
-        text-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .changeHeader {
@@ -394,7 +394,8 @@
     .changeHeader p {
         padding: 6px 14px;
         display: block;
-        text-wrap: nowrap;
+        white-space: nowrap;
+
     }
 
     .changeHeader {
