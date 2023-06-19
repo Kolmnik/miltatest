@@ -87,7 +87,7 @@ input.text-field__input {
 .mapsInfo .left--map {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 50%;
 }
 
@@ -106,8 +106,23 @@ a.howFind {
     .header--withButton, .header {
         flex-direction: column;
         gap: 15px;
+        align-items: flex-start;
+
     }
-    .dataSwitch {
+    .hideProduct {
+        width: 100%;
+        justify-content: center;
+    }
+    .faq {
+        justify-content: center;
+    }
+    input.text-field__input {
+        max-width: 100%;
+    }
+    .dataSwitch--triple {
         flex-direction: column;
+    }
+    .dataSwitch--triple p {
+        text-align: center;
     }
 }
