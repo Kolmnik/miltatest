@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const headerInfoBlock = document.querySelector('.header_info')
     const shadowBlock = document.querySelector('.shadowBlock')
     const searchHelper = document.querySelector('.searchHelper')
+    const searchCross = document.querySelector('#searchCross--input')
+    const searchInput = document.querySelector('#searchInput--input')
 
     buttonHeaderSearch.addEventListener('click', (e) => {
         if (menuHeader.style.display !== 'none'){
@@ -16,20 +18,56 @@ document.addEventListener("DOMContentLoaded", function(event) {
             shadowBlock.style.display = 'block'
             searchHelper.classList.add('active')
             searchHelper.classList.remove('hidden')
+            searchInput.focus()
+            if (searchInput.value == ' ' || searchInput.value == '') {
+                buttonHeaderSearch.style.display = 'none'
+                searchCross.style.marginRight = '0px'
+            }
 
         } else {
-            menuHeader.style.display = 'flex'
-            headerInfoBlock.style.width = ''
-            searchHeader.classList.add('hidden')
-            searchHeader.classList.remove('active')
+            // menuHeader.style.display = 'flex'
+            // headerInfoBlock.style.width = ''
+            // searchHeader.classList.add('hidden')
+            // searchHeader.classList.remove('active')
             shadowBlock.style.display = 'none'
             searchHelper.classList.remove('active')
             searchHelper.classList.add('hidden')
+            buttonHeaderSearch.style.display = 'block'
+
         }
     })
     shadowBlock.addEventListener('click', ()=> {
         shadowBlock.style.display = 'none'
         searchHelper.classList.remove('active')
         searchHelper.classList.add('hidden')
+        headerInfoBlock.style.width = ''
+        menuHeader.style.display = 'flex'
+        searchHeader.classList.add('hidden')
+        searchHeader.classList.remove('active')
+        buttonHeaderSearch.style.display = 'block'
+
+    })
+    searchCross.addEventListener('click', function (e) {
+        if (searchInput.value == ' ' || searchInput.value == ''){
+            shadowBlock.style.display = 'none'
+            searchHelper.classList.remove('active')
+            searchHelper.classList.add('hidden')
+            headerInfoBlock.style.width = ''
+            menuHeader.style.display = 'flex'
+            searchHeader.classList.add('hidden')
+            searchHeader.classList.remove('active')
+            buttonHeaderSearch.style.display = 'block'
+        } else {
+            buttonHeaderSearch.style.display = 'none'
+            searchCross.style.marginRight = '0px'
+            searchInput.value = ' '
+            searchInput.focus()
+        }
+    })
+    searchInput.addEventListener('input', function (e){
+        if (this.value != ' ' || this.value != ''){
+            buttonHeaderSearch.style.display = 'block'
+            searchCross.style.marginRight = '24px'
+        }
     })
 })

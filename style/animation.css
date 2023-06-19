@@ -10,6 +10,10 @@
     }
 }
 
+.searchHelper.active {
+    animation: ShowFromTop 100ms ease-in;
+}
+
 @keyframes Pulsation {
     0% {
         border: 12px solid #FFEBC6;
@@ -31,5 +35,14 @@
     }
     100% {
         border: 7px solid #FFEBC6;
+    }
+}
+
+@keyframes ShowFromTop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
     }
 }
