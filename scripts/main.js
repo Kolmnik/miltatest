@@ -19,10 +19,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHelper.classList.add('active')
             searchHelper.classList.remove('hidden')
             searchInput.focus()
-            if (searchInput.value == ' ' || searchInput.value == '') {
-                buttonHeaderSearch.style.display = 'none'
-                searchCross.style.marginRight = '0px'
-            }
 
         } else {
             // menuHeader.style.display = 'flex'
@@ -58,16 +54,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHeader.classList.remove('active')
             buttonHeaderSearch.style.display = 'block'
         } else {
-            buttonHeaderSearch.style.display = 'none'
-            searchCross.style.marginRight = '0px'
             searchInput.value = ' '
             searchInput.focus()
         }
     })
     searchInput.addEventListener('input', function (e){
         if (this.value != ' ' || this.value != ''){
-            buttonHeaderSearch.style.display = 'block'
-            searchCross.style.marginRight = '24px'
         }
     })
 })
