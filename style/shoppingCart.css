@@ -75,7 +75,7 @@ label {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
 }
 .sectionCardsShop .card .counter {
     display: flex;
@@ -221,12 +221,25 @@ label {
 }
 
 @media (max-width: 768px) {
+    .sectionCardsShop .card.unavailable {
+        flex-direction: row;
+    }
     .sectionCardsShop .card {
         display: flex;
         flex-direction: column;
     }
     .sectionCardsShop .card .rightSideA {
-        margin-left: 126px;
+        margin-left: 115px;
+    }
+    .sectionCardsShop .card .main img {
+        max-width: 70px;
+        height: 70px;
+    }
+    .helper {
+        padding: 20px 30px;
+    }
+    .counter .low {
+        display: none;
     }
 }
 @media (max-width: 425px) {
@@ -235,13 +248,3 @@ label {
     }
 }
 
-@media (max-width: 360px) {
-    .sectionCardsShop .card .main img {
-        max-width: 70px;
-        height: 70px;
-    }
-    .helper {
-        padding: 20px 30px;
-    }
-
-}

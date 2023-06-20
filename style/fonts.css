@@ -53,7 +53,7 @@ p.medium {
     font-size: 16px;
 }
 
-p.low, i.low, a.low {
+p.low, i.low, a.low, input.low {
     font-size: 14px;
 }
 p.tiny {
