@@ -17,7 +17,7 @@
     <title>Милта</title>
 </head>
 <body>
-<header>
+<header class="headshow">
     <div class="inner">
         <div class="logo_menu">
             <a href="#" class="logo">
@@ -33,7 +33,7 @@
                     </defs>
                 </svg>
             </a>
-            <ul class="menu">
+            <ul id="menuFull" class="menu">
                 <li class="menu__item"><a href="#" class="menu__link black__text">Каталог</a></li>
                 <li class="menu__item"><a href="#" class="menu__link black__text">Как купить</a></li>
                 <li class="menu__item"><a href="#" class="menu__link black__text">О нас</a></li>
@@ -42,13 +42,51 @@
             </ul>
         </div>
         <div class="header_info">
-            <p class="blue_bold blue__text weight500">+7 (800) 201-92-39</p>
-            <div class="search">
-                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <p style="display: none" class="blue_bold blue__text weight500">+7 (800) 201-92-39</p>
+            <div id="headerSearch" class="search hidden">
+                <input id="searchInput--input" type="text">
+                <svg id="searchCross--input" class="cross" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 20L20 4" stroke="#929292" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M20 20L4 4" stroke="#929292" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="loopa" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10" cy="10.5" r="8.25" stroke="#0B121C" stroke-width="1.5"/>
                     <path d="M16.5 17L22.5 23" stroke="#0B121C" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
+                <div class="searchHelper hidden">
+                    <div class="answer--helper">
+                        <p>атеросклероз</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1835 15.6158L16.4422 7.55756M16.4422 7.55756L8.38392 6.81629M16.4422 7.55756L7.55726 16.4425" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer--helper">
+                        <p>атеросклероз</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1835 15.6158L16.4422 7.55756M16.4422 7.55756L8.38392 6.81629M16.4422 7.55756L7.55726 16.4425" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer--helper">
+                        <p>атеросклероз</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1835 15.6158L16.4422 7.55756M16.4422 7.55756L8.38392 6.81629M16.4422 7.55756L7.55726 16.4425" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer--helper">
+                        <p>атеросклероз</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1835 15.6158L16.4422 7.55756M16.4422 7.55756L8.38392 6.81629M16.4422 7.55756L7.55726 16.4425" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer--helper">
+                        <p>атеросклероз</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1835 15.6158L16.4422 7.55756M16.4422 7.55756L8.38392 6.81629M16.4422 7.55756L7.55726 16.4425" stroke="#1E63CA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
+
             <div class="account">
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2096_33972)">
@@ -84,6 +122,7 @@
         </div>
     </div>
 </header>
+
 
 <div class="mainSection">
 
@@ -899,8 +938,11 @@
         </div>
     </div>
 </footer>
+<div style="display: none" class="shadowBlock"></div>
+
 
 <script src="/scripts/animation.js"></script>
+<script src="/scripts/main.js"></script>
 
 </body>
 </html>

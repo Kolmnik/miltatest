@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
+
+    // --------------------------------------- search ----------------------------------------
     const buttonHeaderSearch = document.querySelector('.loopa')
     const searchHeader = document.querySelector('#headerSearch')
     const menuHeader = document.querySelector('#menuFull')
@@ -65,4 +68,46 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHelper.classList.remove('hidden')
         }
     })
+
+    // --------------------------------------- end search ------------------------------------
+    let lastScrollPosition = 0
+    const header = document.querySelector('header')
+    document.addEventListener('scroll', (event)=>{
+        ShowHideHeader( lastScrollPosition, window.scrollY)
+    })
+
+    function ShowHideHeader(lastPos, newPos) {
+        if (newPos <= 40) {
+            //showHeader
+            header.classList.remove('headhide')
+            header.classList.add('headshow')
+            console.log('showHeader')
+        } else {
+            let deltaPos = newPos - lastPos
+            if (deltaPos > 5){
+                //hideHeader
+                header.classList.remove('headshow')
+                header.classList.add('headhide')
+                console.log('!showHeader')
+                searchHelper.classList.remove('active')
+                searchHelper.classList.add('hidden')
+                shadowBlock.style.display = 'none'
+
+            } else if (deltaPos < -15) {
+                //showHeader
+                header.classList.remove('headhide')
+                header.classList.add('headshow')
+                console.log('showHeader')
+
+            }
+        }
+        lastScrollPosition = newPos
+    }
+    // --------------------------------------- header ----------------------------------------
+
+
+
+    // --------------------------------------- end header ------------------------------------
+
+
 })
