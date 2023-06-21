@@ -10,18 +10,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const searchHelper = document.querySelector('.searchHelper')
     const searchCross = document.querySelector('#searchCross--input')
     const searchInput = document.querySelector('#searchInput--input')
+    const numHeader = document.querySelector('.number--header')
 
     buttonHeaderSearch.addEventListener('click', (e) => {
         if (menuHeader.style.display !== 'none'){
             menuHeader.style.display = 'none'
             headerInfoBlock.style.width = '100%'
-            searchHeader.style.width = '100%'
+            // searchHeader.style.width = '100%'
             searchHeader.classList.add('active')
             searchHeader.classList.remove('hidden')
             shadowBlock.style.display = 'block'
             searchHelper.classList.add('active')
             searchHelper.classList.remove('hidden')
             searchInput.focus()
+            numHeader.style.display = 'none'
+
 
         } else {
             // menuHeader.style.display = 'flex'
@@ -32,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHelper.classList.remove('active')
             searchHelper.classList.add('hidden')
             buttonHeaderSearch.style.display = 'block'
-
         }
     })
     shadowBlock.addEventListener('click', ()=> {
@@ -44,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         searchHeader.classList.add('hidden')
         searchHeader.classList.remove('active')
         buttonHeaderSearch.style.display = 'block'
+        numHeader.style.display = 'block'
 
     })
     searchCross.addEventListener('click', function (e) {
@@ -56,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHeader.classList.add('hidden')
             searchHeader.classList.remove('active')
             buttonHeaderSearch.style.display = 'block'
+            numHeader.style.display = 'block'
         } else {
             searchInput.value = ' '
             searchInput.focus()
