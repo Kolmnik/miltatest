@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+    function PaintSomething (elemSvg, color) {
+        for (let i = 0; i < elemSvg.children.length; i++) {
+            elemSvg.children[i].setAttribute('stroke',color)
+        }
+    }
+
 
     // --------------------------------------- search ----------------------------------------
     const buttonHeaderSearch = document.querySelector('.loopa')
@@ -16,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         if (menuHeader.style.display !== 'none'){
             menuHeader.style.display = 'none'
             headerInfoBlock.style.width = '100%'
-            // searchHeader.style.width = '100%'
             searchHeader.classList.add('active')
             searchHeader.classList.remove('hidden')
             shadowBlock.style.display = 'block'
@@ -24,13 +29,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHelper.classList.remove('hidden')
             searchInput.focus()
             numHeader.style.display = 'none'
+            buttonHeaderSearch.style.marginTop = '-3px'
 
+            PaintSomething(buttonHeaderSearch, '#1E63CA')
 
         } else {
-            // menuHeader.style.display = 'flex'
-            // headerInfoBlock.style.width = ''
-            // searchHeader.classList.add('hidden')
-            // searchHeader.classList.remove('active')
             shadowBlock.style.display = 'none'
             searchHelper.classList.remove('active')
             searchHelper.classList.add('hidden')
@@ -47,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         searchHeader.classList.remove('active')
         buttonHeaderSearch.style.display = 'block'
         numHeader.style.display = 'block'
+        buttonHeaderSearch.style.marginTop = '-1px'
+
+        PaintSomething(buttonHeaderSearch, '#0B121C')
 
     })
     searchCross.addEventListener('click', function (e) {
@@ -60,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             searchHeader.classList.remove('active')
             buttonHeaderSearch.style.display = 'block'
             numHeader.style.display = 'block'
+            buttonHeaderSearch.style.marginTop = '-1px'
+            PaintSomething(buttonHeaderSearch, '#0B121C')
+
+
         } else {
             searchInput.value = ' '
             searchInput.focus()
@@ -74,6 +84,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 
     // --------------------------------------- end search ------------------------------------
+
+
+
+
+
+
+
+
+
+    // --------------------------------------- header ----------------------------------------
+
     let lastScrollPosition = 0
     const header = document.querySelector('header')
     document.addEventListener('scroll', (event)=>{
@@ -107,9 +128,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         lastScrollPosition = newPos
     }
-    // --------------------------------------- header ----------------------------------------
-
-
 
     // --------------------------------------- end header ------------------------------------
 
